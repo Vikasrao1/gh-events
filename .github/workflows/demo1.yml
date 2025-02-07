@@ -1,9 +1,9 @@
 name: Events Demo 1
 on: 
-  pull request:
+  pull_request:
     types:
       - opened # defining an action based on pull request type opened
-  workflow dispatch: # if we also want to trigger manually
+  workflow_dispatch: # if we also want to trigger manually
 jobs:
   deploy:
     runs-on: ubuntu-latest
